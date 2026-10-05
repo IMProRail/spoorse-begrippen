@@ -235,9 +235,9 @@ Binnen de keten van het vervoersproces heeft een beweging verschillende opeenvol
 •	Daarna een administratief bestaan, maar vanuit een materieelplan gekoppeld aan materieel;
 •	Tenslotte (tijdens de uitvoering) de fysieke beweging buiten op de infra, onder regie van het in-fraplan en het materieelplan, met concrete spoorvoertuig(en).";;;;;;;;;;
 Bewegingmaterieelrelatie;;;Een bewegingmaterieelrelatie is een soort knooppuntrelatie tussen twee bewegingsactiviteiten en geeft aan dat deze activiteiten onderling materieel delen. ;;;combineren, splitsen, overgaan;knooppuntrelatie, materieel, bewegingsactiviteit, combineren, splitsen, daggrens, materieeldienstovergang, overgaan;"Er zijn 3 soorten bewegingmaterieelrelaties: 
-•	Overgaan: al het materieel van één aanvoerende bewegingsactiviteit wordt in één afvoerende bewegingsactiviteit ingezet;
-•	combineren: het materieel uit meer dan één aanvoerende bewegingsactiviteiten wordt in één af-voerende bewegingsactiviteit ingezet;
-•	splitsen: het materieel uit één aanvoerende bewegingsactiviteit wordt in meer dan één bewe-gingsactiviteiten ingezet.";"Bij aankomst gaat 12-JAN-1998 512 over in vertrek van 12-JAN-1998 517
+* overgaan: al het materieel van één aanvoerende bewegingsactiviteit wordt in één afvoerende bewegingsactiviteit ingezet;
+* combineren: het materieel uit meer dan één aanvoerende bewegingsactiviteiten wordt in één af-voerende bewegingsactiviteit ingezet;
+* splitsen: het materieel uit één aanvoerende bewegingsactiviteit wordt in meer dan één bewe-gingsactiviteiten ingezet.";"Bij aankomst gaat 12-JAN-1998 512 over in vertrek van 12-JAN-1998 517
 
 M.b.v. de bewegingmaterieelrelatie worden de “gerelateerde” rijwegen bepaald.
 De materieelrelatie van het soort overgaan wordt ook wel materieelovergang genoemd. Let op het ver-schil met een materieeldienstovergang: daarbij is de overgang van materieel over de daggrens (d.w.z. op twee verschillende patroon/verkeers –dagen) vastgelegd.";;;;;;;;;
