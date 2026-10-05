@@ -20,8 +20,8 @@ const rows = XLSX.utils.sheet_to_json(worksheet, {
 let markdown = '';
 
 for (const row of rows) {
-  const voorkeursterm = String(row['Voorkeursterm'] || '').trim();
-  const definitie = String(row['Definitie'] || '').trim();
+  const voorkeursterm = String(row['voorkeursterm'] || '').trim();
+  const definitie = String(row['definitie'] || '').trim();
 
   if (!voorkeursterm) {
     continue;
