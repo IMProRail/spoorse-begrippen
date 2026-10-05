@@ -1,7 +1,7 @@
 const XLSX = require('xlsx');
 const fs = require('fs');
 
-const workbook = XLSX.readFile('begrippen.xlsx');
+const workbook = XLSX.readFile('begrippen-nlsbb.xlsx');
 
 const sheetName = workbook.SheetNames[0];
 const worksheet = workbook.Sheets[sheetName];
