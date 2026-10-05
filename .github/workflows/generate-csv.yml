@@ -6,7 +6,8 @@ on:
       - main
     paths:
       - 'begrippen-nlsbb.xlsx'
-
+  workflow_dispatch:
+ 
 permissions:
   contents: write
 
