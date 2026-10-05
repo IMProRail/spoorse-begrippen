@@ -17,4 +17,3 @@ fs.writeFileSync(
 );
 
 console.log(`Werkblad "${sheetName}" omgezet naar begrippen.csv`);
-``
