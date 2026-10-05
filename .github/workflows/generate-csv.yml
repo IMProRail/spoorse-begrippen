@@ -1,0 +1,33 @@
+name: Genereer CSV vanuit Excel
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'begrippen-nlsbb.xlsx'
+
+jobs:
+  generate-csv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Installeer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Installeer xlsx
+        run: npm install xlsx
+
+      - name: Converteer XLSX naar CSV
+        run: node .github/workflows/scripts/excel-to-csv.js
+
+      - name: Upload resultaat
+        uses: actions/upload-artifact@v4
+        with:
+          name: begrippen-csv
+          path: begrippen.csv
