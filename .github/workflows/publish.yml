@@ -1,0 +1,40 @@
+name: Publiceer begrippen
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout spoorse-begrippen
+        uses: actions/checkout@v4
+
+      - name: Checkout publicatierepository
+        uses: actions/checkout@v4
+        with:
+          repository: IMProRail/begrippen
+          token: ${{ secrets.PUBLISH_TOKEN }}
+          path: publicatie
+
+      - name: Kopieer begrippen.csv
+        run: |
+          mkdir -p publicatie/spoorse-begrippen
+          cp begrippen.csv publicatie/spoorse-begrippen/begrippen.csv
+
+      - name: Commit en push
+        working-directory: publicatie
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add spoorse-begrippen/begrippen.csv
+
+          if git diff --cached --quiet; then
+            echo "Geen wijzigingen om te publiceren."
+          else
+            git commit -m "Publiceer spoorse-begrippen ${GITHUB_REF_NAME}"
+            git push
+          fi
