@@ -10,10 +10,10 @@ jobs:
 
     steps:
       - name: Checkout spoorse-begrippen
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Checkout publicatierepository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           repository: IMProRail/begrippen
           token: ${{ secrets.PUBLISH_TOKEN }}
